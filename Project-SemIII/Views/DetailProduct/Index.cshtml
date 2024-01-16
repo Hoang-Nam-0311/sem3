@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+@model IEnumerable<Project_Sem3.Models.Product>
+    <div class="site-wrap">
+
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0">
+                    <a href="/">Home</a> <span class="mx-2 mb-0">/</span> <a asp-controller="Product" asp-action="Index">Product</a> <span class="mx-2 mb-0">/</span>Detail <strong class="text-black"></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section">
+            <div class="container">
+                <div class="row">
+                    @foreach (var item in Model) {
+                    <div class="col-md-5 mr-auto">
+                        <div class="border text-center">
+                            <img src="~/upload/@item.Image" style="width:300px;height:400px;" alt="Image" class="img-fluid p-5">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="text-black">@item.Name</h2>                               
+                        <textarea rows="13" cols="70">@item.Description</textarea>
+
+                        <div class="mt-5">
+                            <ul class="nav nav-pills mb-3 custom-pill" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                                       aria-controls="pills-home" aria-selected="true">Ordering Information</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                                       aria-controls="pills-profile" aria-selected="false">Specifications</a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <table class="table" >
+                                        <thead>
+                                        <th>Technical specifications</th>
+                                        <th>Packaging</th>
+                                       
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><textarea class="border" rows="15" cols="50">@item.TechnicalSpecifications</textarea></th>
+                                                <td>
+                                                    144/CS
+                                                </td>
+                                              
+                                            </tr>
+                                        
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                                    <table class="table custom-table">
+
+                                        <tbody>
+                                            <tr>
+                                                <td>HPIS CODE</td>
+                                                <td class="bg-light">999_200_40_0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HEALTHCARE PROVIDERS ONLY</td>
+                                                <td class="bg-light">No</td>
+                                            </tr>
+                                            <tr>
+                                                <td>LATEX FREE</td>
+                                                <td class="bg-light">Yes, No</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MEDICATION ROUTE</td>
+                                                <td class="bg-light">Topical</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section bg-image overlay" style="background-image: url('images/hero_bg_2.jpg');">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-7">
+                        <h3 class="text-white">Sign up for discount up to 55% OFF</h3>
+                        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam.</p>
+                        <p class="mb-0"><a href="#" class="btn btn-outline-white">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+<style>
+    textarea {
+        border: none;
+    }
+.border{
+    border-right:black 100px ;
+}
+
+    
+</style>

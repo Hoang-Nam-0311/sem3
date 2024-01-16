@@ -1,0 +1,28 @@
+﻿<div class="site-navbar py-2">
+
+    <div class="search-wrap">
+        <div class="container">
+            <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+            <form action="#" method="post">
+                <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <div class="site-logo">
+                    <a href="/" class="js-logo-clone"><strong class="text-primary">Pharma</strong>tive</a>
+                </div>
+            </div>
+            @await Component.InvokeAsync("Navbar");
+            <div class="icons">
+                <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+                <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none">
+                    <span class="icon-menu"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

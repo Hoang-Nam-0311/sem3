@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pharmative &mdash; Colorlib Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/LayoutHome/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="~/LayoutHome/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/LayoutHome/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/LayoutHome/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/LayoutHome/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/LayoutHome/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/LayoutHome/css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="~/LayoutHome/css/aos.css">
+
+    <link rel="stylesheet" href="~/LayoutHome/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="site-wrap">
+
+
+        @await Html.PartialAsync("_LayoutHeader.cshtml")
+
+
+        
+
+
+
+        @RenderBody()
+        @await Html.PartialAsync("_LayoutFooter.cshtml")
+    </div>
+
+    <script src="~/LayoutHome/js/jquery-3.3.1.min.js"></script>
+    <script src="~/LayoutHome/js/jquery-ui.js"></script>
+    <script src="~/LayoutHome/js/popper.min.js"></script>
+    <script src="~/LayoutHome/js/bootstrap.min.js"></script>
+    <script src="~/LayoutHome/js/owl.carousel.min.js"></script>
+    <script src="~/LayoutHome/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/LayoutHome/js/aos.js"></script>
+
+    <script src="~/LayoutHome/js/main.js"></script>
+    @await RenderSectionAsync("Scrpits",required:false)
+</body>
+
+</html>
