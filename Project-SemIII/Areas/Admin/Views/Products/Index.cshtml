@@ -6,9 +6,15 @@
 }
 
 <h1>Index</h1>
-
+<form asp-action="Search">
+    <div class="form-group">
+        <input type="text" class="form-control" name="keyword" placeholder="Enter search keywords">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+   
+</form>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>

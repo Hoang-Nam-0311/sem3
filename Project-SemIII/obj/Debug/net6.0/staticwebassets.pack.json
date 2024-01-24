@@ -4453,6 +4453,10 @@
       "PackagePath": "staticwebassets\\upload\\Man-hinh-cua-day-chuyen-san-xuat-vien-nang-mem-tu-dong.jpg"
     },
     {
+      "Id": "D:\\C#\\.NET CORE\\Project-SemIII\\Project-SemIII\\wwwroot\\upload\\May-dap-vien-sui-tu-dong.png",
+      "PackagePath": "staticwebassets\\upload\\May-dap-vien-sui-tu-dong.png"
+    },
+    {
       "Id": "D:\\C#\\.NET CORE\\Project-SemIII\\Project-SemIII\\wwwroot\\upload\\May-dap-vien-toc-do-cao-5.jpg",
       "PackagePath": "staticwebassets\\upload\\May-dap-vien-toc-do-cao-5.jpg"
     },

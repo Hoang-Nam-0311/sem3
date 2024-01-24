@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r9MIUufZz5ElzIyVpsy8QWaDPv7kTMH+046axByYEuE=",
+  "Hash": "lDO26I495Mf3yTHqFuG/Zy4i48kdF3a73eCFhYAx8OI=",
   "Source": "Project-SemIII",
   "BasePath": "_content/Project-SemIII",
   "Mode": "Default",
@@ -19004,6 +19004,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\upload\\may-dap-vien-1-chay-1123.jpg"
+    },
+    {
+      "Identity": "D:\\C#\\.NET CORE\\Project-SemIII\\Project-SemIII\\wwwroot\\upload\\May-dap-vien-sui-tu-dong.png",
+      "SourceId": "Project-SemIII",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\.NET CORE\\Project-SemIII\\Project-SemIII\\wwwroot\\",
+      "BasePath": "_content/Project-SemIII",
+      "RelativePath": "upload/May-dap-vien-sui-tu-dong.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\May-dap-vien-sui-tu-dong.png"
     },
     {
       "Identity": "D:\\C#\\.NET CORE\\Project-SemIII\\Project-SemIII\\wwwroot\\upload\\May-dap-vien-toc-do-cao-5.jpg",

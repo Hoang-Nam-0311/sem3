@@ -18,13 +18,14 @@ namespace Project_SemIII.Controllers
         [HttpPost]
         public IActionResult Index(QuoteUs model)
         {
+
             if (ModelState.IsValid)
             {
 
                 _context.QuoteUs.Add(model);
                 _context.SaveChanges();
 
-                TempData["SuccessMessage"] = "Gửi feedback thành công";
+                TempData["SuccessMessage"] = "Feedback sent successfully";
 
                 return RedirectToAction("Index");
             }

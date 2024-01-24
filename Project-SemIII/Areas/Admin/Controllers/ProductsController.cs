@@ -178,5 +178,32 @@ namespace Project_SemIII.Areas.Admin.Controllers
         {
           return (_context.Products?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        // GET: Admin/Products/Search
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        // POST: Admin/Products/Search
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Search(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword))
+            {
+                
+                return RedirectToAction(nameof(Index));
+            }
+
+          
+            var searchResults = await _context.Products
+                .Include(p => p.Category)
+                .Where(p => p.Name.Contains(keyword) || p.Description.Contains(keyword))
+                .ToListAsync();
+
+            
+            return View("Index", searchResults);
+        }
     }
 }

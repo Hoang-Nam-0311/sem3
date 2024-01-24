@@ -26,7 +26,7 @@ namespace Project_SemIII.Controllers
                 _context.ContactUs.Add(model);
                 _context.SaveChanges();
 
-                TempData["SuccessMessage"] = "Gửi feedback thành công";
+                TempData["SuccessMessage"] = "Contact sent successfully";
                
                 return RedirectToAction("Index");
             }
